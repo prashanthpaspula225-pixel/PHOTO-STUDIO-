@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StudioLens Photo Studio</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .hero {
+            background: url('https://images.unsplash.com/photo-1504208434309-cb69f4fe52b0') no-repeat center center/cover;
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+        }
+        .service-img {
+            height: 220px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .gallery-img {
+            height: 250px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+        footer {
+            margin-top: 40px;
+            padding: 25px;
+            background: #111;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#top">StudioLens</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="top" class="hero text-center">
+        <div>
+            <h1 class="display-3 fw-bold">Premium Photo Studio</h1>
+            <p class="lead">Capturing Life’s Most Beautiful Moments</p>
+            <a href="#services" class="btn btn-primary btn-lg">View Services</a>
+        </div>
+    </section>
+
+    <section id="services" class="container my-5">
+        <h2 class="text-center mb-4 fw-bold">Our Services</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba" class="service-img card-img-top" />
+                    <div class="card-body">
+                        <h5 class="card-title fw-semibold">Wedding Photography</h5>
+                        <p class="card-text">Elegant and emotional storytelling for your special day.</p>
+                        <a href="#contact" class="btn btn-outline-primary w-100">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9" class="service-img card-img-top" />
+                    <div class="card-body">
+                        <h5 class="card-title fw-semibold">Portrait Shoots</h5>
+                        <p class="card-text">Professional portraits for models, actors, and individuals.</p>
+                        <a href="#contact" class="btn btn-outline-primary w-100">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1509114397022-ed747cca3f65" class="service-img card-img-top" />
+                    <div class="card-body">
+                        <h5 class="card-title fw-semibold">Product Photography</h5>
+                        <p class="card-text">High clarity product visuals for brands and businesses.</p>
+                        <a href="#contact" class="btn btn-outline-primary w-100">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="container my-5">
+        <h2 class="text-center mb-4 fw-bold">Gallery</h2>
+        <div class="row g-4">
+            <div class="col-md-4"><img src="https://th.bing.com/th/id/OIP.uwQRyC3IZFYwa13wUR1hfAHaEK?w=267&h=150&c=6&o=7&cb=ucfimg2&dpr=1.3&pid=1.7&rm=3&ucfimg=1" /></div>
+            <div class="col-md-4"><img src="https://images.unsplash.com/photo-1519681393784-d120267933ba" class="gallery-img" /></div>
+            <div class="col-md-4"><img src="https://images.unsplash.com/photo-1504208434309-cb69f4fe52b0" class="gallery-img" /></div>
+        </div>
+    </section>
+
+    <section id="contact" class="container my-5">
+        <h2 class="text-center mb-4 fw-bold">Contact Us</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label fw-semibold">Name</label>
+                        <input type="text" class="form-control" id="name" required />
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label fw-semibold">Email</label>
+                        <input type="email" class="form-control" id="email" required />
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label fw-semibold">Message</label>
+                        <textarea id="message" class="form-control" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-dark w-100">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        © 2025 StudioLens. All Rights Reserved.
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
